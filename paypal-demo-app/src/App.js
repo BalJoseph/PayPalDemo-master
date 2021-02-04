@@ -72,7 +72,6 @@ function App(props) {
       })
       totalAmount=totalAmount+x.price
     })
-
     let finalOrderObject = {
       // reference_id: "store_mobile_world_order_1234",
       intent:'CAPTURE',
@@ -115,11 +114,7 @@ function App(props) {
           value: "0.01",
           currency: "EUR"
         }
-      },
-      // payment_linked_group: 1,
-      // custom: "custom_value_2388",
-      // invoice_number: "invoice_number_2388",
-      // payment_descriptor: "Payment Mobile World"
+      }
   }
      
   
@@ -157,39 +152,6 @@ function App(props) {
     },
    
   ];
-  const data = [
-    {
-      key: '1',
-      name: 'John Brown',
-      price: 32,      
-      description: 'My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Park.',
-      amount:{
-        currency_code:'EUR',
-        value:100.00
-      }
-    },
-    {
-      key: '2',
-      name: 'John Brown',
-      price: 32,      
-      description: 'My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Park.',
-      amount:{
-        currency_code:'EUR',
-        value:100.00
-      }
-    },
-    {
-      key: '3',
-      name: 'John Brown',
-      price: 32,      
-      description: 'My name is Joe Black, I am 32 years old, living in Sidney No. 1 Lake Park.',
-      amount:{
-        currency_code:'EUR',
-        value:100.00
-      }
-    }
-  ];
-
   //#endregion
 
 

@@ -11,6 +11,7 @@ function PayPal(props) {
         console.log('order object',props.finalOrder);
         window.paypal.Buttons({
             createOrder: (data,actions,error)=>{
+                console.log("Test")
                 return actions.order.create({
                     // intent Capture -> intent to capture the transaction imediately after purchase no pending
                     intent:'CAPTURE',
